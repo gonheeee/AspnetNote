@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetNote.MVC6", "AspnetNote.MVC6\AspnetNote.MVC6.csproj", "{84614606-E2A9-4522-B431-2A184F85652C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84614606-E2A9-4522-B431-2A184F85652C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84614606-E2A9-4522-B431-2A184F85652C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84614606-E2A9-4522-B431-2A184F85652C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84614606-E2A9-4522-B431-2A184F85652C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {109D2898-4FB0-436A-8CD2-232D35065D0B}
+	EndGlobalSection
+EndGlobal
