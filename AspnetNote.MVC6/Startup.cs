@@ -23,6 +23,11 @@ namespace AspnetNote.MVC6
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+
+            // Session - 서비스에 등록함
+            services.AddSession();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -48,6 +53,8 @@ namespace AspnetNote.MVC6
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            // 이 Application에서 사용하겠다.
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

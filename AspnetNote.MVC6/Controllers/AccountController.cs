@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AspnetNote.MVC6.DataContext;
 using AspnetNote.MVC6.Models;
 using AspnetNote.MVC6.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -36,6 +37,8 @@ namespace AspnetNote.MVC6.Controllers
                     if(user != null)
                     {
                         // Login Success
+                        //HttpContext.Session.SetInt32(key, value);
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
                         return RedirectToAction("LoginSuccess", "Home");   
                     }                    
                 }
@@ -43,6 +46,12 @@ namespace AspnetNote.MVC6.Controllers
                 ModelState.AddModelError(string.Empty, "Invalid User");
             }
             return View(model);
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+            return RedirectToAction("Index", "Home");
         }
         
 
