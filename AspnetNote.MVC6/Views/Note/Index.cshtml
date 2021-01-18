@@ -11,7 +11,12 @@
         {
             <tr>
                 <td>@note.NoteNo</td>
-                <td>@note.NoteTitle</td>
+                <td>
+                @* asp-route-[전달할 변수 명] 변수명은 컨트롤러의 액션 메소드의 파라미터와 동일해야함 *@
+                    <a asp-controller="Note" asp-action="Detail" asp-route-noteNo="@note.NoteNo">
+                        @note.NoteTitle
+                    </a>
+                </td>
                 <td>@note.UserNo</td>
             </tr>
         }
