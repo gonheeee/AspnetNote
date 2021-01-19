@@ -39,7 +39,7 @@ namespace AspnetNote.MVC6.Controllers
                         // Login Success
                         //HttpContext.Session.SetInt32(key, value);
                         HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
-                        return RedirectToAction("LoginSuccess", "Home");   
+                        return RedirectToAction("Index", "Home");   
                     }                    
                 }
                 // Login Fail

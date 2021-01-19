@@ -13,7 +13,8 @@
                 <label>제목 : </label> @Model.NoteTitle
             </div>
             <div class="panel-body">
-                @Model.NoteContents
+                @* Html.Raw(객체) 를 사용하면 html태그를 적용시켜줌 *@
+                @Html.Raw(Model.NoteContents)
             </div>
             <div class="panel-footer text-right">
                 <a class="btn btn-primary" asp-controller="Note" asp-action="Index">목록</a>
