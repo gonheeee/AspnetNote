@@ -62,5 +62,8 @@ jQuery.trumbowyg.langs.ko = {
     title: '툴팁',
     text: '내용',
     target: '타겟',
-    width: '너비'
+    width: '너비',
+
+    image: '이미지',
+    upload: '업로드',
 };

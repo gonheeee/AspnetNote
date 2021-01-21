@@ -15,8 +15,8 @@
     'use strict';
 
     var defaultOptions = {
-        serverPath: '',
-        fileFieldName: 'fileToUpload',
+        serverPath: '/api/upload',      // JS에서 작동하므로 앞에 / 추가
+        fileFieldName: 'file',          // 컨트롤러에서 사용한 파라미터 명
         data: [],                       // Additional data for ajax [{name: 'key', value: 'value'}]
         headers: {},                    // Additional headers
         xhrFields: {},                  // Additional fields
